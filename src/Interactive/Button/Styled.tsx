@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ButtonSize, FontSize } from "../Constants/Sizing";
-import * as Colors from '../Colors';
+import { ButtonSize, FontSize } from "../../Constants/Sizing";
+import * as Colors from '../../Constants/Colors';
 
 interface ButtonStyle {
     fontSize?: string;
@@ -9,7 +9,7 @@ interface ButtonStyle {
     color?: string;
 }
 
-export const Button = styled.button<ButtonStyle> `
+const Button = styled.button<ButtonStyle> `
     width: ${(props => props.buttonSize || ButtonSize.Medium)};
     font-size: ${(props => props.fontSize || FontSize.Medium)};
     background-color: ${(props => props.backgroundColor || Colors.Apricot)};
@@ -24,3 +24,7 @@ export const Button = styled.button<ButtonStyle> `
         color: ${Colors.DarkApricot};
     }
 `;
+
+export {
+    Button
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Styled from './Styled';
-import { FontSize } from '../Constants/Sizing';
+import { FontSize } from '../../Constants/Sizing';
 
 interface ButtonProps {
     fontSize?: FontSize;
