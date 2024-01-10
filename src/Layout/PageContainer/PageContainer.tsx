@@ -3,15 +3,19 @@ import * as Styled from './Styled';
 
 interface PageContainerProps {
     children?: any;
+    flexDirection?: string;
 }
 
 const PageContainer: React.FunctionComponent<PageContainerProps> = (props: PageContainerProps) => {
     const {
-        children
+        children,
+        flexDirection
     } = props;
 
     return(
-        <Styled.PageContainer>
+        <Styled.PageContainer
+            flexDirection={flexDirection}
+        >
             {children}
         </Styled.PageContainer>
     )

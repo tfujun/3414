@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
-interface PageContainerStyledProps {
+interface BodyProps {
     flexDirection?: string;
+    padding?: string;
 }
 
-const PageContainer = styled.div<PageContainerStyledProps>`
+const Body = styled.div<BodyProps>`
     display: flex;
-    padding: 0px;
-    margin: 0px;
-    gap: 5%;
     flex-direction: ${props => props.flexDirection || 'row'};
+    padding: ${props => props.padding || '1vh 2vw'};
+
 `;
 
 export {
-    PageContainer
+    Body
 }
