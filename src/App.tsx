@@ -2,6 +2,7 @@ import React from 'react';
 import { PageContainer } from './Layout/PageContainer/Styled';
 import Header from './Layout/Header/Header';
 import Body from './Layout/Body/Body';
+import InputField from './Interactive/InputField/InputField';
 
 const App: React.FunctionComponent = () => {
 
@@ -13,6 +14,7 @@ const App: React.FunctionComponent = () => {
       <Body>
         This is outside
       </Body>
+        <InputField type='text'></InputField>
 
     </PageContainer>
   )

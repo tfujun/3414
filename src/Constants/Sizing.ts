@@ -16,8 +16,15 @@ enum HeadingSize {
     Large = '26px'
 }
 
+enum InputFieldSize {
+    Small = '20%',
+    Medium = '30%',
+    Large = '50%'
+}
+
 export {
     ButtonSize,
     FontSize,
-    HeadingSize
+    HeadingSize,
+    InputFieldSize
 }
