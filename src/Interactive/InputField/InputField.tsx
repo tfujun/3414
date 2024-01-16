@@ -1,6 +1,5 @@
 import React from 'react';
 import * as Styled from './Styled';
-import { InputFieldSize } from '../../Constants/Sizing';
 
 interface InputFieldProps {
     type: 'text' | 'number';
